@@ -615,6 +615,7 @@ function openFcSet() {
     b.className = "opt" + (c.id === fcCat ? " sel" : "");
     b.disabled = n === 0;
     b.textContent = c.name + (n ? "（" + n + "）" : "（未登録）");
+    if (c.id === "vocab") { b.style.gridColumn = "1 / -1"; b.style.minHeight = "88px"; b.style.fontSize = "1.35rem"; b.style.justifyContent = "center"; }
     b.onclick = () => { fcCat = c.id; openFcSet(); };
     box.appendChild(b);
   });
