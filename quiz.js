@@ -195,7 +195,35 @@ const POOL_VOCAB = [
   { t:"語彙", s:"Sales have ____ sharply since last spring.", c:["increased","assigned","obtained","required"], a:0,
     r:"increase(増える) / assign(割り当てる) / obtain(得る) / require(必要とする)。目的語がなく sharply(急激に)が続くので、自動詞の increased です。", ja:"売上は昨年の春から急激に伸びている。" },
   { t:"語彙", s:"The package must be ____ to the customer by Thursday.", c:["delivered","devoted","demanded","decorated"], a:0,
-    r:"deliver(配達する) / devote(捧げる) / demand(要求する) / decorate(飾る)。荷物が「届けられる」ので delivered です。", ja:"荷物は木曜日までにお客様へ届けなければならない。" }
+    r:"deliver(配達する) / devote(捧げる) / demand(要求する) / decorate(飾る)。荷物が「届けられる」ので delivered です。", ja:"荷物は木曜日までにお客様へ届けなければならない。" },
+  { t:"語彙", s:"Please ____ your attendance by replying to this email.", c:["confirm", "conform", "confess", "confuse"], a:0,
+    r:"confirm(確認する) / conform(従う) / confess(告白する) / confuse(混乱させる)。出席を「確認する」ので confirm です。", ja:"このメールに返信して、出席を確認してください。" },
+  { t:"語彙", s:"We are pleased to ____ the winner of this year's award.", c:["announce", "pronounce", "renounce", "denounce"], a:0,
+    r:"announce(発表する) / pronounce(発音する) / renounce(放棄する) / denounce(非難する)。受賞者を「発表する」ので announce です。", ja:"今年の受賞者を発表できることをうれしく思います。" },
+  { t:"語彙", s:"The new system will ____ our efficiency.", c:["improve", "approve", "remove", "prove"], a:0,
+    r:"improve(改善する) / approve(承認する) / remove(取り除く) / prove(証明する)。効率を「改善する」ので improve です。", ja:"新システムは私たちの効率を改善するだろう。" },
+  { t:"語彙", s:"The board will ____ a new CEO next month.", c:["appoint", "appeal", "appear", "approach"], a:0,
+    r:"appoint(任命する) / appeal(訴える) / appear(現れる) / approach(近づく)。CEOを「任命する」ので appoint です。", ja:"取締役会は来月、新しいCEOを任命する予定だ。" },
+  { t:"語彙", s:"The company must ____ costs to stay profitable.", c:["reduce", "produce", "introduce", "deduce"], a:0,
+    r:"reduce(減らす) / produce(生産する) / introduce(導入する) / deduce(推論する)。コストを「減らす」ので reduce です。", ja:"その会社は黒字を保つためにコストを削減しなければならない。" },
+  { t:"語彙", s:"Employees should ____ the manager before taking leave.", c:["notify", "modify", "justify", "classify"], a:0,
+    r:"notify(知らせる) / modify(修正する) / justify(正当化する) / classify(分類する)。上司に「知らせる」ので notify です。", ja:"従業員は休暇を取る前に上司に知らせるべきだ。" },
+  { t:"語彙", s:"The meeting was ____ until next week because of the typhoon.", c:["postponed", "proposed", "purchased", "preserved"], a:0,
+    r:"postpone(延期する) / propose(提案する) / purchase(購入する) / preserve(保存する)。会議を「延期した」ので postponed です。", ja:"台風のため、会議は来週に延期された。" },
+  { t:"語彙", s:"The museum is open to the public and charges no ____ fee.", c:["admission", "permission", "decision", "condition"], a:0,
+    r:"admission(入場) / permission(許可) / decision(決定) / condition(条件)。「入場料」は admission fee です。", ja:"その美術館は一般公開で、入場料はかからない。" },
+  { t:"語彙", s:"The company has a strict ____ against smoking in the office.", c:["policy", "police", "pollution", "poverty"], a:0,
+    r:"policy(方針) / police(警察) / pollution(汚染) / poverty(貧困)。社内の「方針」なので policy です。", ja:"その会社は社内での喫煙を厳しく禁じる方針を持っている。" },
+  { t:"語彙", s:"We need to ____ the budget before the end of the month.", c:["calculate", "calm", "cancel", "capture"], a:0,
+    r:"calculate(計算する) / calm(落ち着かせる) / cancel(取り消す) / capture(捕らえる)。予算を「計算する」ので calculate です。", ja:"月末までに予算を計算する必要がある。" },
+  { t:"語彙", s:"A ____ amount of data was lost in the accident.", c:["huge", "hungry", "harsh", "honest"], a:0,
+    r:"huge(巨大な) / hungry(空腹の) / harsh(厳しい) / honest(正直な)。データの量が「莫大な」ので huge です。", ja:"その事故で、膨大な量のデータが失われた。" },
+  { t:"語彙", s:"The two companies reached a ____ agreement after a long negotiation.", c:["mutual", "mysterious", "miserable", "minor"], a:0,
+    r:"mutual(相互の) / mysterious(不可解な) / miserable(惨めな) / minor(小さな)。「相互の合意」なので mutual です。", ja:"長い交渉の末、両社は相互に合意に達した。" },
+  { t:"語彙", s:"Visitors must ____ at the front desk upon arrival.", c:["register", "regret", "reject", "relate"], a:0,
+    r:"register(登録する) / regret(後悔する) / reject(拒否する) / relate(関連づける)。受付で「登録する」ので register です。", ja:"訪問者は到着時に受付で登録しなければならない。" },
+  { t:"語彙", s:"The manager asked us to ____ our ideas at the meeting.", c:["express", "export", "expose", "expand"], a:0,
+    r:"express(表現する) / export(輸出する) / expose(さらす) / expand(拡大する)。意見を「述べる」ので express です。", ja:"部長は私たちに、会議で意見を述べるよう求めた。" }
 ];
 
 const POOL_PC = [
@@ -287,6 +315,7 @@ const MODES = [
   { id: 2, name: "動詞問題クイズ", desc: "主述の一致・態・時制(10問)" },
   { id: 3, name: "前置詞 vs 接続詞クイズ", desc: "後ろは名詞？ それとも S+V？(10問)" },
   { id: 4, name: "代名詞・関係詞・比較クイズ", desc: "格の使い分け・whose/where・比較級・最上級(10問)" },
+  { id: 6, name: "🎴 フラッシュカード（単語暗記）", desc: "品詞・接尾辞ルール・例文・単語帳をカードでインプット" },
   { id: 5, name: "Part 5 総合予想模試", desc: "全ジャンルの4択穴埋め問題からランダム出題(10 / 20 / 30問)" }
 ];
 
@@ -324,7 +353,7 @@ let startTime = 0;
 let timeLogs = []; // 各問の所要秒数
 
 function go(name) {
-  ["home", "quiz", "end"].forEach(s => $(s).classList.toggle("hide", s !== name));
+  ["home", "quiz", "end", "fcset", "fc", "fcend"].forEach(s => $(s).classList.toggle("hide", s !== name));
   window.scrollTo(0, 0);
 }
 
@@ -340,6 +369,7 @@ function showStart(scroll) {
 }
 
 function selectMode(id) {
+  if (id === 6) { openFcSet(); return; }
   pendingMode = id; pendingCount = 0;
   document.querySelectorAll("[data-n]").forEach(x => x.classList.remove("sel"));
   if (id === 5) {
@@ -537,6 +567,132 @@ document.querySelectorAll("[data-n]").forEach(b => {
     showStart(true);
   };
 });
+
+
+// ===== 単語帳データ（words.js の VOCAB_RAW を解析）=====
+const VOCAB_FIX = { "触触する": "触れる", "不孝な": "不幸な", "常性の": "恒常的な" };
+function parseVocab() {
+  const out = []; let chap = "";
+  if (typeof VOCAB_RAW === "undefined") return out;
+  VOCAB_RAW.split("\n").forEach(line => {
+    line = line.trim();
+    if (!line) return;
+    if (/^第.+章/.test(line)) { chap = line; return; }
+    const m = line.match(/^([A-Za-z][A-Za-z' -]*?)\s*[:：]\s*(.+)$/);
+    if (!m) return;
+    let mean = m[2];
+    for (const k in VOCAB_FIX) mean = mean.split(k).join(VOCAB_FIX[k]);
+    out.push({ kind: "vocab", word: m[1], mean, chap });
+  });
+  return out;
+}
+const VOCAB = parseVocab();
+
+// ===== フラッシュカード =====
+const FC_CATS = [
+  { id: "all", name: "すべて(品詞カード)", f: c => c.kind === "pos" },
+  { id: "n", name: "名詞", f: c => c.kind === "pos" && c.answer === 0 && !c.exc },
+  { id: "v", name: "動詞", f: c => c.kind === "pos" && c.answer === 1 },
+  { id: "a", name: "形容詞", f: c => c.kind === "pos" && c.answer === 2 && !c.exc },
+  { id: "adv", name: "副詞", f: c => c.kind === "pos" && c.answer === 3 },
+  { id: "exc", name: "引っかけ・例外", f: c => c.kind === "pos" && c.exc },
+  { id: "vocab", name: "単語帳(意味)", f: c => c.kind === "vocab" }
+];
+const FC_COUNTS = [{ n: 0, name: "全件" }, { n: 10, name: "10枚" }, { n: 20, name: "20枚" }];
+let fcCat = "all", fcCnt = 10, fcDeck = [], fcIdx = 0, fcLearned = 0, fcAgain = [], fcFlipped = false;
+
+function allCards() {
+  const pos = POOL_POS.map(r => Object.assign(toPos(r), { kind: "pos", exc: r[1] === "xly" || r[1] === "xnoun" }));
+  return pos.concat(VOCAB);
+}
+const catCards = (id) => allCards().filter(FC_CATS.find(c => c.id === id).f);
+
+function openFcSet() {
+  const box = $("fcCats"); box.innerHTML = "";
+  FC_CATS.forEach(c => {
+    const n = catCards(c.id).length;
+    const b = document.createElement("button");
+    b.className = "opt" + (c.id === fcCat ? " sel" : "");
+    b.disabled = n === 0;
+    b.textContent = c.name + (n ? "（" + n + "）" : "（未登録）");
+    b.onclick = () => { fcCat = c.id; openFcSet(); };
+    box.appendChild(b);
+  });
+  const cb = $("fcCounts"); cb.innerHTML = "";
+  FC_COUNTS.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "opt" + (c.n === fcCnt ? " sel" : "");
+    b.style.justifyContent = "center";
+    b.textContent = c.name;
+    b.onclick = () => { fcCnt = c.n; openFcSet(); };
+    cb.appendChild(b);
+  });
+  go("fcset");
+}
+
+function startFc(deck) {
+  fcDeck = deck; fcIdx = 0; fcLearned = 0; fcAgain = [];
+  go("fc"); renderCard();
+}
+
+function renderCard() {
+  const c = fcDeck[fcIdx];
+  fcFlipped = false;
+  $("fcLabel").textContent = FC_CATS.find(x => x.id === fcCat).name + "　" + (fcIdx + 1) + " / " + fcDeck.length;
+  $("fcBar").style.width = (fcIdx / fcDeck.length * 100) + "%";
+  $("fcTally").textContent = "⭕ " + fcLearned + "　❌ " + fcAgain.length;
+  $("fcCard").innerHTML = '<div class="fc-word">' + c.word + '</div><div class="fc-hint">タップしてめくる 🔄</div>';
+  flipAnim();
+}
+
+function flipAnim() {
+  const el = $("fcCard");
+  el.classList.remove("flip"); void el.offsetWidth; el.classList.add("flip");
+}
+
+function flipCard() {
+  const c = fcDeck[fcIdx];
+  fcFlipped = !fcFlipped;
+  if (!fcFlipped) {
+    $("fcCard").innerHTML = '<div class="fc-word">' + c.word + '</div><div class="fc-hint">タップしてめくる 🔄</div>';
+  } else if (c.kind === "pos") {
+    $("fcCard").innerHTML = '<div class="fc-small">' + c.word + '</div><div class="fc-pos">' + POS[c.answer] + '</div>' +
+      '<div class="fc-text"><p>' + c.rule + '</p><p><b>仲間:</b> ' + c.mates + '</p>' +
+      '<p><span class="en">' + c.en + '</span><br>' + c.ja + '</p></div>';
+  } else {
+    $("fcCard").innerHTML = '<div class="fc-small">' + c.word + '</div><div class="fc-mean">' + c.mean + '</div>' +
+      (c.chap ? '<div class="fc-small">' + c.chap + '</div>' : '');
+  }
+  flipAnim();
+}
+
+function fcAnswer(ok) {
+  const c = fcDeck[fcIdx];
+  if (ok) fcLearned++; else fcAgain.push(c);
+  fcIdx++;
+  if (fcIdx < fcDeck.length) renderCard(); else finishFc();
+}
+
+function finishFc() {
+  go("fcend");
+  $("fcResult").textContent = "⭕ 覚えた " + fcLearned + " 枚　／　❌ 復習 " + fcAgain.length + " 枚";
+  $("fcRetry").classList.toggle("hide", fcAgain.length === 0);
+  $("fcComment").textContent = fcAgain.length === 0 ? "全部覚えました！クイズで力試ししましょう。" : "「もう一度」にした単語だけで再挑戦できます。";
+}
+
+$("fcStart").onclick = () => {
+  let deck = shuffle(catCards(fcCat));
+  if (fcCnt) deck = deck.slice(0, fcCnt);
+  if (deck.length) startFc(deck);
+};
+$("fcCard").onclick = flipCard;
+$("fcOk").onclick = () => fcAnswer(true);
+$("fcAgainBtn").onclick = () => fcAnswer(false);
+$("fcRetry").onclick = () => startFc(shuffle(fcAgain));
+$("fcSetBack").onclick = () => { renderHome(); go("home"); };
+$("fcBack").onclick = () => { renderHome(); go("home"); };
+$("fcHome").onclick = () => { renderHome(); go("home"); };
+$("fcAgainSet").onclick = openFcSet;
 
 renderHome();
 go("home");
